@@ -46,16 +46,18 @@ function mouseDragged(e) {
   yOffset += (e.movementY / cSize) * gSize;
 }
 
+
+
+
+
+
 // vars for functions
 const rho = 1.293; // gemiddeld in Nederland
 const Cw = 1.2; // gemiddeld bij de mens
 const A = 1.7 / 2; // gemiddeld oppervlakte huid van mens / 2
 
 
-
-
 // functions
-
 let functions = {
   Fwl: function(v) {
     return 0.5 * rho * Cw * A * Math.pow(v + 70, 2);
